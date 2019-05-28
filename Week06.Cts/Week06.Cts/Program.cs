@@ -23,7 +23,12 @@
             //SimpleMethod(s);
 
             int a = 100;
+
             OutMethod(out a);
+
+            RefTypeMethod(ref a);
+
+            SimpleMethod(a);
         }
 
         public static void OutMethod(out int s)
@@ -43,6 +48,7 @@
             s.Name = "Updated by ref";
 
             s = new Student();
+
             s.Name = "Updated not ok";
             s.SecondName = "Updated not ok";
         }
